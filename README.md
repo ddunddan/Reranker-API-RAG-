@@ -79,6 +79,8 @@ graph TD
     style F fill:#bbf,stroke:#333,stroke-width:2px;
     style G fill:#f9f,stroke:#333,stroke-width:2px;
 
+---
+
 ## 🔗 참고 사항 및 적용 분야
 
 본 프로젝트는 리랭커 기반 RAG 시스템의 **구조 이해 및 테스트 목적의 예제**로 제공됩니다. 실제 프로덕션 환경에 적용 시 다음과 같은 추가적인 커스터마이징 및 고려 사항이 필요합니다:
