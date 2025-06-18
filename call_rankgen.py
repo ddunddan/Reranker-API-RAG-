@@ -18,7 +18,7 @@ def llm_call(inputs):
         }
 
         response = requests.post(
-            'https://hyperclova-x-alpha-liverpool-24b-cand1-noskip-tp4.clops-inference.clova.ai/v2/generate',
+            'reranker endpoint',
             headers=headers,
             json=json_data,
         )
@@ -36,7 +36,7 @@ def get_result(keyword):
         'top_k': 5,
     }
 
-    response = requests.post('http://10.168.71.218:10054/search/', headers=headers, json=json_data)
+    response = requests.post('search engine endpoint', headers=headers, json=json_data)
     response = response.json()['result']
     response = [sample['content'] for sample in response]
     return response
